@@ -68,9 +68,7 @@ public class PathToSpEL {
 	private static String pathNodesToSpEL(String[] pathNodes) {
 		StringBuilder spelBuilder = new StringBuilder();
 
-		for (int i = 0; i < pathNodes.length; i++) {
-
-			String pathNode = pathNodes[i];
+		for (String pathNode : pathNodes) {
 
 			if (pathNode.length() == 0) {
 				continue;
